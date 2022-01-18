@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="matter.js"></script>
+    <script src="p5.play.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+
+    <button style="margin-left: 94%" onclick="myFunction()">patch notes</button>
+    <button
+      style="
+        height: 100px;
+        width: 100px;
+        font-size: 30px;
+        text-align: center;
+        margin-left: 45.5%;
+      "
+      onclick="functionUp()"
+    >
+      up
+    </button>
+    <button
+      style="
+        height: 100px;
+        width: 100px;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 37%;
+      "
+      onclick="functionLeft()"
+    >
+      left
+    </button>
+    <button
+      style="
+        height: 100px;
+        width: 100px;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 6.7%;
+      "
+      onclick="functionRight()"
+    >
+      right
+    </button>
+    <button
+      style="
+        height: 100px;
+        width: 100px;
+        font-size: 23px;
+        text-align: center;
+        margin-left: 45.5%;
+      "
+      onclick="functionDown()"
+    >
+      down
+    </button>
+
+    <script>
+      function myFunction() {
+        alert(
+          "I want to thank my family and friends for suporting me!\nFixes in bugs.\nMade it mobile friendly."
+        );
+      }
+      function functionUp() {
+        bee.y -= 100;
+      }
+      function functionLeft() {
+        bee.x -= 75;
+      }
+      function functionRight() {
+        bee.x += 75;
+      }
+      function functionDown() {
+        bee.y += 100;
+      }
+    </script>
+  </body>
+</html>
